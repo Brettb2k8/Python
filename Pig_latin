@@ -1,0 +1,13 @@
+pyg = 'ay'#sets the ay variable
+
+original = raw_input('Enter a word:')#input the word to translate
+
+if len(original) > 0 and original.isalpha():#lets check our word to rule out numbers
+    print original
+else:
+    print 'empty'
+    
+word = original.lower() #set the word to all lower chars
+first = word[0]
+new_word = word[1:] + first + pyg
+print new_word [1:len(new_word)] #print the final translation
